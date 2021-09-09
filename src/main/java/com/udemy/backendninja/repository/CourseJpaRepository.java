@@ -8,7 +8,7 @@ import java.io.Serializable;
 import java.util.List;
 
 @Repository("courseJpaRepository")
-public interface CourseJpaRepository extends JpaRepository<Course , Serializable> {
+public interface CourseJpaRepository extends JpaRepository<Course , Integer> {
 
     //Se puede hacer métodos abstractos
 

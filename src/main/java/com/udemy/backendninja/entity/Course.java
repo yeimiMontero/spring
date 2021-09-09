@@ -11,7 +11,7 @@ public class Course {
     @Id
     @GeneratedValue
     @Column(name = "id")
-    private int id;
+    private Integer id;
 
     @Column(name="name")
     private String name;
@@ -20,15 +20,15 @@ public class Course {
     private String description;
 
     @Column(name="price")
-    private int price;
+    private Integer price;
 
     @Column(name="hours")
-    private int hours;
+    private Integer hours;
 
     //Siempre hay que dejar el contructor por defecto por que es el que usa hibernate para trabajar
     public Course(){}
 
-    public Course(int id, String name, String description, int price, int hours) {
+    public Course(Integer id, String name, String description, Integer price, Integer hours) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -36,11 +36,11 @@ public class Course {
         this.hours = hours;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -60,19 +60,19 @@ public class Course {
         this.description = description;
     }
 
-    public int getPrice() {
+    public Integer getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(Integer price) {
         this.price = price;
     }
 
-    public int getHours() {
+    public Integer getHours() {
         return hours;
     }
 
-    public void setHours(int hours) {
+    public void setHours(Integer hours) {
         this.hours = hours;
     }
 
